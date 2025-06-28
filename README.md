@@ -1,0 +1,1 @@
+https://coingecko-api-proxy.onrender.com/

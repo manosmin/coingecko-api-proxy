@@ -13,10 +13,10 @@ const Container = styled.div`
 const App = () => {
   return (
     <Container>
-      <BrowserRouter basename="/coins">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Coins />}/>
-          <Route path="/:id" element={<CoinDetails />} />
+          <Route path="/coins/:id" element={<CoinDetails />} />
         </Routes>
       </BrowserRouter>
     </Container>

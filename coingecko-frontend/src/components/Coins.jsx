@@ -180,7 +180,7 @@ const Coins = () => {
         {coins.map((coin) => (
           <Tr key={coin.symbol}>
             <TdLink>
-              <Link to={`/${coin.id}`}>{coin.name}</Link>
+              <Link to={`/coins/${coin.id}`}>{coin.name}</Link>
             </TdLink>
             <Td>{coin.symbol.toUpperCase()}</Td>
             <Td>${coin.current_price}</Td>
