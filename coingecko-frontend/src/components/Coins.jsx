@@ -122,8 +122,8 @@ const Coins = () => {
       try {
         const data = await coinsService.getCoins(params);
         setCoins(data);
-      } catch (error) {
-        setError("Error loading coins market data")
+      } catch (error) {        
+        setError(error.response?.data?.error)
         console.error("Error loading coins market data: ", error);
       } finally {
         setLoading(false);

@@ -105,7 +105,7 @@ const CoinDetails = () => {
         const data = await coinsService.getCoinById(id);
         setCoin(data);
       } catch (error) {
-        setError("Failed to load coin details.")
+        setError(error.response?.data?.error)
         console.error("Error fetching coin data: ", error);
       } finally {
         setLoading(false);
